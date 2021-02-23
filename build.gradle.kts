@@ -31,20 +31,6 @@ tasks.register<JavaExec>("runServer") {
     main = "HelloWorldServerKt"
 }
 
-//tasks.register<Jar>("HelloServerJar") {
-//    archiveClassifier.set("HelloServer")
-//    manifest {
-//        attributes["Main-Class"] = "HelloWorldServerKt"
-//    }
-//
-//    from(sourceSets.main.get().output)
-//
-//    dependsOn(configurations.runtimeClasspath)
-//    from({
-//        configurations.runtimeClasspath.get().filter { it.name.endsWith("jar") }.map { zipTree(it) }
-//    })
-//}
-
 val jar by tasks.getting(Jar::class) {
     archiveBaseName.set("ZMQHelloServer")
     manifest {

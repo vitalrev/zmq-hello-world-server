@@ -7,5 +7,5 @@
 ## Run docker container
 
 ```
-docker run -it -p 5555:5555 zmq-hello-server:latest 
+docker run -it -p 9702:9702 zmq-hello-server:latest 
 ```

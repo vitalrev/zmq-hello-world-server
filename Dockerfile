@@ -24,7 +24,7 @@ RUN chown -R root:root /app
 FROM openjdk:11.0-jre-slim
 
 ARG JAVA_OPTS="-Xmx1024m -Djava.security.egd=file:/dev/./urandom"
-ARG PORT=5555
+ARG PORT=9702
 
 ENV JAVA_OPTS ${JAVA_OPTS}
 ENV SERVER_PORT ${PORT}

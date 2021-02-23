@@ -7,7 +7,7 @@ fun main(args: Array<String>) {
         println("Start server..")
         // Socket to talk to clients
         val socket: ZMQ.Socket = context.createSocket(SocketType.REP)
-        socket.bind("tcp://*:5555")
+        socket.bind("tcp://*:9702")
 
         while (!Thread.currentThread().isInterrupted) {
             // Block until a message is received
